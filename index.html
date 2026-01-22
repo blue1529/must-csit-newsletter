@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUST CSIT Newsletter </title>
+    <link rel="icon" href="MUST CSIT Logo-04.png" type="image/png">
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+    #recent_activities a {
+      color:blue;
+    }
+  </style>
+  </head>
+
+  <body>
+    <!-- Loader  
+    <div id="csit-loader">
+        <div class="typewriter-container">
+          <img src="MUST CSIT Logo-04.png" alt="MUST CSIT Logo" class="w-40 h-40 object-contain mx-auto" loading="eager">
+            <div class="typewriter-text" id="typewriter">Welcome to CSIT...</div>
+            <div class="loading-bar" id="loadingBar"></div>
+            <div class="csit-logo">MUST CSIT SOCIETY</div>
+        </div>
+    </div>-->
+
+    <!-- Navigation Bar -->
+    <nav
+      class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-blue-100 shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+
+          <!-- Logo and Title -->
+          <a href="https://must-csit-newsletter.netlify.app">
+            <!-- CSIT LINK -->
+            <div class="flex items-center space-x-3">
+              <img src="MUST CSIT Logo-04.png" alt="MUST CSIT Society Logo"
+                class="h-10 w-10 object-contain" />
+              <span class="text-xl font-bold text-blue-900">CSIT
+                Newsletter</span>
+            </div>
+          </a>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-8">
+            <button
+              class="text-gray-900 font-semibold hover:text-blue-600 transition-colors hover:cursor-pointer"
+              onclick="scrollToSection('recent_activities')">
+              Recent Activities
+            </button>
+            <button
+              class="text-gray-700 font-semibold hover:text-blue-600 transition-colors hover:cursor-pointer"
+              onclick="scrollToSection('upcoming-events')">
+              Upcoming Events
+            </button>
+            <button
+              class="text-gray-900 font-semibold hover:text-blue-600 transition-colors hover:cursor-pointer"
+              onclick="location.href = 'about.html'">
+              About Us
+            </button>
+          </div>
+
+          <!-- Mobile Menu Toggle Button -->
+          <button id="mobile-menu-toggle"
+            class="md:hidden p-2 rounded hover:bg-gray-100 transition">
+            <!-- Menu Icon (Hamburger from Lucide as SVG) -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 text-blue-900" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+
+        </div>
+
+        <!-- Mobile Menu Content -->
+        <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-2">
+          <button onclick="scrollToSection('recent_activities')"
+          class="block w-full text-left px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors">
+          Recent Activities
+        </button>
+        <button onclick="scrollToSection('upcoming-events')"
+        class="block w-full text-left px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors">
+        Upcoming Events
+      </button>
+      <button onclick="location.href = 'about.html'" 
+        class="block w-full text-left px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors">
+        About Us
+      </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section
+      class="bg-gradient-to-r from-blue-900 via-purple-900 to-blue-800 text-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+        <!-- Logo -->
+        <div class="flex justify-center mb-8 mx-auto">
+          <img src="MUST CSIT Logo-04.png" alt="MUST CSIT Society Logo"
+            class="w-full max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] h-auto object-contain" />
+        </div>
+
+        <!-- Heading -->
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+          MUST CSIT Society
+          <span
+            class="block text-2xl md:text-3xl font-normal mt-2 text-blue-200">
+            Newsletter - December 2025
+          </span>
+        </h1>
+
+        <!-- Description -->
+        <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+          Stay connected with the latest activities, achievements, and
+          opportunities
+          in our vibrant tech community
+        </p>
+
+        <!-- Button -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button id="scroll-button"
+            class="flex items-center justify-center bg-white text-blue-900 hover:bg-gray-100 transition-all duration-300 text-lg font-semibold px-6 py-3 rounded-lg">
+            <!-- Calendar Icon SVG (Lucide) -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2"
+              fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"
+                d="M8 7V3m8 4V3M3 11h18M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            View Upcoming Events
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section id="upcoming-events" class="h-[500px]bg-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Upcoming
+          Events</h2>
+        <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+          Don’t miss out on what’s coming up next!
+        </p>
+
+        <div id="events-list"
+          class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+          <!-- Event cards will be injected here via supabase -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Activities Section -->
+    <section id="recent_activities" class="bg-gray-50 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Recent
+          Activities</h2>
+        <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+          Here’s what the CSIT Society has been up to in the past few months —
+          workshops, tech events, and impactful
+          sessions.
+        </p>
+
+        <!-- Activities Grid -->
+        <div id="activities-list"
+          class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+          <!--Activities inserted here via supabase-->
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Cybersecurity news-->
+    <section class="bg-white py-16">
+      <div class=" mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Stay
+          Updated!</h2>
+        <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+          Read the latest cybersecurity news and insights across the world.
+        </p>
+        <rssapp-wall id="8I2Uo7gzoosWJQDy"></rssapp-wall><script
+          src="https://widget.rss.app/v1/wall.js" type="text/javascript"
+          async></script>
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-gradient-to-r from-blue-700 via-purple-700 to-blue-700 text-white">
+      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-slate-950/50">
+
+        <!-- Main Footer Content - Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
+
+          <!-- Column 1: Logo and Description -->
+          <div class="space-y-4">
+            <div class="flex justify-center md:justify-start animate-pulse">
+              <img src="MUST CSIT Logo-04.png" alt="MUST CSIT Society Logo"
+                class="w-full max-w-[180px] h-auto object-contain " />
+            </div>
+            <p class="text-gray-300 text-sm leading-relaxed">
+              The official Computer Science & Information Technology Society of
+              Malawi University of Science and Technology. Fostering innovation,
+              collaboration, and
+              technical excellence in our tech community.
+            </p>
+            <div class="flex items-center space-x-2 text-gray-400 text-sm">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span>Malawi University of Science and Technology (MUST), Thyolo,
+                Malawi</span>
+            </div>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div>
+            <h3
+              class="text-lg font-bold mb-4 text-blue-200 border-b border-blue-800 pb-2">Quick
+              Links</h3>
+            <ul class="space-y-2">
+              <li><a href="/about.html"
+                  class="text-gray-300 hover:text-blue-300 transition-colors flex items-center">
+                  <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  About Society</a></li>
+              <li><a href="#upcoming-events"
+                  class="text-gray-300 hover:text-blue-300 transition-colors flex items-center">
+                  <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  Events Calendar</a></li>
+              <!--
+          <li><a href="/resources" class="text-gray-300 hover:text-blue-300 transition-colors flex items-center">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+            </svg>
+            Learning Resources</a></li>
+            -->
+              <!--
+          <li><a href="/gallery" class="text-gray-300 hover:text-blue-300 transition-colors flex items-center">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+            </svg>
+            Photo Gallery</a></li>
+            -->
+
+              <li><a href="about.html#team-list"
+                  class="text-gray-300 hover:text-blue-300 transition-colors flex items-center">
+                  <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9.804a6 6 0 01-6.5 5.197" />
+                  </svg>
+                  Executive Team</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Contact & Social Media -->
+          <div>
+            <h3
+              class="text-lg font-bold mb-4 text-blue-200 border-b border-blue-800 pb-2">Connect
+              With Us</h3>
+            <div class="space-y-4">
+              <div class="flex items-start space-x-3">
+                <svg class="w-5 h-5 text-blue-300 mt-1 flex-shrink-0"
+                  fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path
+                    d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+                <div>
+                  <p class="font-medium text-blue-100">Email Us</p>
+                  <a href="mailto:csitsociety@malwanchaluniversity.edu"
+                    class="text-gray-300 hover:text-blue-300 text-sm">csitsociety@must.ac.mw</a>
+                </div>
+              </div>
+
+              <div>
+                <p class="font-medium text-blue-100 mb-3">Follow Our Socials</p>
+                <div class="flex space-x-4">
+                  <a
+                    href="https://www.linkedin.com/in/must-csit-society-87108a381?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BQzdM0VfCQWiyh2%2F03WEqOw%3D%3D"
+                    class="hover:scale-110 p-2 transition-colors">
+                    <img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn"
+                      class="w-10 h-10 hover:animate-pulse">
+                    <!--
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>-->
+                  </a>
+                  <a
+                    href="https://www.instagram.com/must_csit678?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    class="hover:scale-110 p-2 rounded-full transition-colors">
+                    <img src="images/3721672-instagram_108066.svg"
+                      alt="Instagram" class="w-10 h-10 hover:animate-pulse   object-contain">
+                    <!--
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+                </svg>
+                -->
+                  </a>
+                  <!--
+              <a href="https://github.com/csit-must" class="bg-blue-800 hover:bg-blue-700 p-2 rounded-full transition-colors">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+              -->
+                  <!--
+              <a href="https://discord.gg/csit-must" class="bg-blue-800 hover:bg-blue-700 p-2 rounded-full transition-colors">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515a.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0a12.64 12.64 0 00-.617-1.25a.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057a19.9 19.9 0 005.993 3.03a.078.078 0 00.084-.028c.462-.63.872-1.295 1.226-1.994a.076.076 0 00-.041-.106a13.107 13.107 0 01-1.872-.892a.077.077 0 01-.008-.128c.125-.094.25-.188.372-.284a.076.076 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.076.076 0 01.078.01c.12.096.245.19.37.284a.077.077 0 01-.006.127a12.3 12.3 0 01-1.873.892a.077.077 0 00-.041.107c.355.698.765 1.363 1.226 1.993a.076.076 0 00.084.028a19.839 19.839 0 006.002-3.03a.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+                </svg>
+              </a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 4: Newsletter Subscription 
+      <div>
+        <h3 class="text-lg font-bold mb-4 text-blue-200 border-b border-blue-800 pb-2">Stay Updated</h3>
+        <p class="text-gray-300 text-sm mb-4">Get the latest events, workshops, and opportunities directly in your inbox.</p>
+        <form class="space-y-3">
+          <input type="email" placeholder="Your email address" 
+                 class="w-full px-4 py-2 bg-white border border-blue-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white placeholder-gray-400" />
+          <button type="submit" 
+                  class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium py-2 px-4 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5">
+            Subscribe to Newsletter
+          </button>
+        </form>
+        <p class="text-gray-400 text-xs mt-3">We respect your privacy. Unsubscribe at any time.</p>
+      </div>
+      -->
+        </div>
+
+        <!-- Bottom Bar with Copyright and Legal Links -->
+        <div class="border-t border-blue-800 pt-8">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <!-- Copyright -->
+            <div class="flex items-center space-x-4">
+              <p class="text-gray-400 text-sm">
+                &copy; 2025 CSIT Society, MUST. All rights
+                reserved.
+              </p>
+              <div class="hidden md:flex items-center space-x-1 text-green-400">
+                <svg width="16px" height="16px"
+                  viewBox="-112.64 -112.64 481.28 481.28" fill="#22c55e">
+                  <path
+                    d="M128,200c-16,0-42.45605-.18018-72.88965-17.75146-30.43652-17.57227-40.28418-39.58643-43.43457-50.8545a7.95692,7.95692,0,0,1,5.68018-9.832c7.38183-1.8916,20.12793-3.60156,36.52588.2876-6.65186-22.24609-3.2544-39.50781-.415-48.248a8.01264,8.01264,0,0,1,9.3042-5.33984A77.46013,77.46013,0,0,1,94.09277,83.38916h-.001A107.00223,107.00223,0,0,0,88,120C88,178.18164,128,200,128,200Zm110.644-78.438c-7.38134-1.8916-20.12793-3.60156-36.52588.2876,6.65235-22.24609,3.2544-39.50781.415-48.248a8.01264,8.01264,0,0,0-9.3042-5.33984,77.46013,77.46013,0,0,0-31.32177,15.12744h.001A107.00223,107.00223,0,0,1,168,120c0,58.18164-40,80-40,80,16,0,42.45605-.18018,72.88965-17.75146,30.43652-17.57227,40.28418-39.58643,43.43457-50.8545A7.95654,7.95654,0,0,0,238.644,121.562Z"
+                    opacity="0.2" />
+                  <path
+                    d="M250.47559,121.28906a15.82032,15.82032,0,0,0-9.84375-7.47558,80.056,80.056,0,0,0-27.957-1.85254,85.73919,85.73919,0,0,0-2.53125-40.8252,15.96151,15.96151,0,0,0-18.54394-10.706,82.54925,82.54925,0,0,0-26.15772,10.74463,94.04874,94.04874,0,0,0-27.84326-34.36963,15.9407,15.9407,0,0,0-19.19726,0A94.05373,94.05373,0,0,0,90.55762,71.17432,82.556,82.556,0,0,0,64.40234,60.42969a15.96653,15.96653,0,0,0-18.54589,10.707A85.73054,85.73054,0,0,0,43.3252,111.96a80.01629,80.01629,0,0,0-27.957,1.85352,15.957,15.957,0,0,0-11.3955,19.73828c3.53808,12.65332,14.36767,36.70508,47.13769,55.626C83.67676,207.979,112.45654,208,127.94629,208c.01562,0,.03027.00195.0459.00195L128,208.00146l.00781.00049c.01563,0,.03028-.00195.0459-.00195,15.48975,0,44.26953-.021,76.83594-18.82324,32.77-18.91992,43.59961-42.97168,47.13769-55.625A15.81809,15.81809,0,0,0,250.47559,121.28906Z" />
+                </svg>
+                <span class="text-sm">Lotus Technologies</span>
+              </div>
+            </div>
+
+            <!-- Legal Links -->
+            <div class="flex flex-wrap justify-center gap-4 text-sm">
+              <a href="/privacy-policy"
+                class="text-gray-400 hover:text-blue-300 transition-colors">Privacy
+                Policy</a>
+              <a href="/terms-of-service"
+                class="text-gray-400 hover:text-blue-300 transition-colors">Terms
+                of Service</a>
+              <!--
+          <a href="/code-of-conduct" class="text-gray-400 hover:text-blue-300 transition-colors">Code of Conduct</a>
+          <a href="/sitemap" class="text-gray-400 hover:text-blue-300 transition-colors">Sitemap</a>
+          <a href="/contact" class="text-gray-400 hover:text-blue-300 transition-colors">Contact</a>
+          -->
+            </div>
+
+            <!-- Mobile Lotus Technologies -->
+            <div class="md:hidden flex items-center animate-pulse space-x-1 text-green-400">
+              <svg width="16px" height="16px"
+                viewBox="-112.64 -112.64 481.28 481.28" fill="#22c55e">
+                <path
+                  d="M128,200c-16,0-42.45605-.18018-72.88965-17.75146-30.43652-17.57227-40.28418-39.58643-43.43457-50.8545a7.95692,7.95692,0,0,1,5.68018-9.832c7.38183-1.8916,20.12793-3.60156,36.52588.2876-6.65186-22.24609-3.2544-39.50781-.415-48.248a8.01264,8.01264,0,0,1,9.3042-5.33984A77.46013,77.46013,0,0,1,94.09277,83.38916h-.001A107.00223,107.00223,0,0,0,88,120C88,178.18164,128,200,128,200Zm110.644-78.438c-7.38134-1.8916-20.12793-3.60156-36.52588.2876,6.65235-22.24609,3.2544-39.50781.415-48.248a8.01264,8.01264,0,0,0-9.3042-5.33984,77.46013,77.46013,0,0,0-31.32177,15.12744h.001A107.00223,107.00223,0,0,1,168,120c0,58.18164-40,80-40,80,16,0,42.45605-.18018,72.88965-17.75146,30.43652-17.57227,40.28418-39.58643,43.43457-50.8545A7.95654,7.95654,0,0,0,238.644,121.562Z"
+                  opacity="0.2" />
+                <path
+                  d="M250.47559,121.28906a15.82032,15.82032,0,0,0-9.84375-7.47558,80.056,80.056,0,0,0-27.957-1.85254,85.73919,85.73919,0,0,0-2.53125-40.8252,15.96151,15.96151,0,0,0-18.54394-10.706,82.54925,82.54925,0,0,0-26.15772,10.74463,94.04874,94.04874,0,0,0-27.84326-34.36963,15.9407,15.9407,0,0,0-19.19726,0A94.05373,94.05373,0,0,0,90.55762,71.17432,82.556,82.556,0,0,0,64.40234,60.42969a15.96653,15.96653,0,0,0-18.54589,10.707A85.73054,85.73054,0,0,0,43.3252,111.96a80.01629,80.01629,0,0,0-27.957,1.85352,15.957,15.957,0,0,0-11.3955,19.73828c3.53808,12.65332,14.36767,36.70508,47.13769,55.626C83.67676,207.979,112.45654,208,127.94629,208c.01562,0,.03027.00195.0459.00195L128,208.00146l.00781.00049c.01563,0,.03028-.00195.0459-.00195,15.48975,0,44.26953-.021,76.83594-18.82324,32.77-18.91992,43.59961-42.97168,47.13769-55.625A15.81809,15.81809,0,0,0,250.47559,121.28906Z" />
+              </svg>
+              <span class="text-sm">A product of Lotus Technologies</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="events.js"></script>
+    <script src="supabaseClient.js" type="module"></script>
+    <script src="scrolling-functionality.js"> </script>
+    <script src="loader.js"> </script>
+  </body>
+
+</html>
